@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Ryan Hart's Blog</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2015-01-23T15:00:35-05:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://rhart4004.github.io/blog/feed.xml" />
+<link rel="alternate" type="text/html" href="http://rhart4004.github.io/blog" />
+<updated>2015-01-23T18:56:22-05:00</updated>
+<id>http://rhart4004.github.io/blog/</id>
 <author>
   <name>Ryan Hart</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://rhart4004.github.io/blog/</uri>
   <email>rhart92@gmail.com</email>
 </author>
 
@@ -17,13 +17,13 @@
 
 <entry>
   <title type="html"><![CDATA[Spoofing Your MAC Address]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/spoofing-your-mac-address/" />
-  <id>http://localhost:4000/blog/spoofing-your-mac-address</id>
+  <link rel="alternate" type="text/html" href="http://rhart4004.github.io/blog/blog/spoofing-your-mac-address/" />
+  <id>http://rhart4004.github.io/blog/blog/spoofing-your-mac-address</id>
   <published>2015-01-22T20:57:31-05:00</published>
   <updated>2015-01-22T20:57:31-05:00</updated>
   <author>
     <name>Ryan Hart</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://rhart4004.github.io/blog</uri>
     <email>rhart92@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Changing your MAC address on a linux based machine is fairly straight forward
@@ -46,7 +46,7 @@ with the new MAC address that you want your wireless card to have.&lt;/li&gt;
 MAC address should be printed to the screen.&lt;/li&gt;
 &lt;/ol&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/spoofing-your-mac-address/&quot;&gt;Spoofing Your MAC Address&lt;/a&gt; was originally published by Ryan Hart at &lt;a href=&quot;http://localhost:4000&quot;&gt;Ryan Hart's Blog&lt;/a&gt; on January 22, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://rhart4004.github.io/blog/blog/spoofing-your-mac-address/&quot;&gt;Spoofing Your MAC Address&lt;/a&gt; was originally published by Ryan Hart at &lt;a href=&quot;http://rhart4004.github.io/blog&quot;&gt;Ryan Hart's Blog&lt;/a&gt; on January 22, 2015.&lt;/p&gt;</content>
 </entry>
 
 </feed>
