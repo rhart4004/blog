@@ -1,0 +1,37 @@
+[
+
+  
+    {
+      "title"			: "Spoofing Your MAC Address",
+      "link"			: "http://localhost:4000/blog/spoofing-your-mac-address/",
+      "excerpt"		: "“Learn how to spoof your MAC address on your Mac”"
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Who am I?",
+      "link"			: "http://localhost:4000/about/",
+      "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
+    }
+  
+
+  
+
+  
+
+]
