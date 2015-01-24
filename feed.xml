@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://rhart4004.github.io/blog/feed.xml" />
 <link rel="alternate" type="text/html" href="http://rhart4004.github.io/blog" />
-<updated>2015-01-23T18:56:22-05:00</updated>
+<updated>2015-01-24T14:05:40-05:00</updated>
 <id>http://rhart4004.github.io/blog/</id>
 <author>
   <name>Ryan Hart</name>
@@ -31,19 +31,41 @@ and can be extremely useful.&lt;/p&gt;
 
 &lt;p&gt;The way to do the is as follows:&lt;/p&gt;
 
+&lt;p&gt;Open a terminal window (my preference is iTerm on my MacBook Pro)
+Run 
+    ~~~
+    ifconfig 
+    ~~~
+and you should see a screen similar to the one shown below. (on MacBook Pros en0 is Ethernet, and en1 is Wireless)
+1. This is a numbered list.
+2. I’m going to include a fenced code block as part of this bullet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```
+Code
+More Code
+```
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;ol&gt;
-  &lt;li&gt;Open a terminal window (my preference is iTerm on my MacBook Pro)&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;ifconfig&lt;/code&gt; and you should see a screen similar to the one shown below.
-(on MacBook Pros en0 is Ethernet, and en1 is Wireless)&lt;/li&gt;
-  &lt;li&gt;Run &lt;code&gt;ifconfig en1 | grep ether&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;You should see &lt;code&gt;ether 00:00:00:00:00:00&lt;/code&gt; with your specific MAC address. The
-reason en1 is used is because you want to find the MAC address for your
-wireless card. (To reset your MAC address, you will either want to write it
-down, or it will automagically reset when you reboot your computer)&lt;/li&gt;
-  &lt;li&gt;To change your MAC address run &lt;code&gt;sudo ifconfig en1 ether 00:00:00:00:00:01&lt;/code&gt;
+  &lt;li&gt;Run 
+ &lt;code&gt;
+ ifconfig en1 | grep ether`.
+&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;You should see 
+ &lt;code&gt;
+ ether 00:00:00:00:00:00
+&lt;/code&gt;
+with your specific MAC address. The reason en1 is used is because you want to find the MAC address for your wireless card. (To reset your MAC address, you will either want to write it down, or it will automagically reset when you reboot your computer)&lt;/li&gt;
+  &lt;li&gt;To change your MAC address run 
+ &lt;code&gt;
+ sudo ifconfig en1 ether 00:00:00:00:00:01
+&lt;/code&gt;
 with the new MAC address that you want your wireless card to have.&lt;/li&gt;
-  &lt;li&gt;To check that it worked you can run &lt;code&gt;ifconfig en1 | grep ether&lt;/code&gt; and the new
-MAC address should be printed to the screen.&lt;/li&gt;
+  &lt;li&gt;To check that it worked you can run 
+ &lt;code&gt;
+ ifconfig en1 | grep ether 
+&lt;/code&gt;
+and the new MAC address should be printed to the screen.&lt;/li&gt;
 &lt;/ol&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://rhart4004.github.io/blog/blog/spoofing-your-mac-address/&quot;&gt;Spoofing Your MAC Address&lt;/a&gt; was originally published by Ryan Hart at &lt;a href=&quot;http://rhart4004.github.io/blog&quot;&gt;Ryan Hart's Blog&lt;/a&gt; on January 22, 2015.&lt;/p&gt;</content>

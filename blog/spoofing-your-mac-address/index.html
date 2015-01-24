@@ -144,19 +144,41 @@ and can be extremely useful.</p>
 
 <p>The way to do the is as follows:</p>
 
+<p>Open a terminal window (my preference is iTerm on my MacBook Pro)
+Run 
+    ~~~
+    ifconfig 
+    ~~~
+and you should see a screen similar to the one shown below. (on MacBook Pros en0 is Ethernet, and en1 is Wireless)
+1. This is a numbered list.
+2. I’m going to include a fenced code block as part of this bullet:</p>
+
+<pre><code>```
+Code
+More Code
+```
+</code></pre>
+
 <ol>
-  <li>Open a terminal window (my preference is iTerm on my MacBook Pro)</li>
-  <li>Run <code>ifconfig</code> and you should see a screen similar to the one shown below.
-(on MacBook Pros en0 is Ethernet, and en1 is Wireless)</li>
-  <li>Run <code>ifconfig en1 | grep ether</code>.</li>
-  <li>You should see <code>ether 00:00:00:00:00:00</code> with your specific MAC address. The
-reason en1 is used is because you want to find the MAC address for your
-wireless card. (To reset your MAC address, you will either want to write it
-down, or it will automagically reset when you reboot your computer)</li>
-  <li>To change your MAC address run <code>sudo ifconfig en1 ether 00:00:00:00:00:01</code>
+  <li>Run 
+ <code>
+ ifconfig en1 | grep ether`.
+</code></li>
+  <li>You should see 
+ <code>
+ ether 00:00:00:00:00:00
+</code>
+with your specific MAC address. The reason en1 is used is because you want to find the MAC address for your wireless card. (To reset your MAC address, you will either want to write it down, or it will automagically reset when you reboot your computer)</li>
+  <li>To change your MAC address run 
+ <code>
+ sudo ifconfig en1 ether 00:00:00:00:00:01
+</code>
 with the new MAC address that you want your wireless card to have.</li>
-  <li>To check that it worked you can run <code>ifconfig en1 | grep ether</code> and the new
-MAC address should be printed to the screen.</li>
+  <li>To check that it worked you can run 
+ <code>
+ ifconfig en1 | grep ether 
+</code>
+and the new MAC address should be printed to the screen.</li>
 </ol>
 
         
