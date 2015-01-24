@@ -139,46 +139,52 @@
         
       </footer>
       <div class="entry-content">
-        <p>Changing your MAC address on a linux based machine is fairly straight forward
-and can be extremely useful.</p>
+        <p>Changing your MAC address on a linux based machine is fairly straight forward and can be extremely useful.</p>
 
 <p>The way to do the is as follows:</p>
 
-<p>Open a terminal window (my preference is iTerm on my MacBook Pro)
-Run 
-    ~~~
-    ifconfig 
-    ~~~
-and you should see a screen similar to the one shown below. (on MacBook Pros en0 is Ethernet, and en1 is Wireless)
-1. This is a numbered list.
-2. I’m going to include a fenced code block as part of this bullet:</p>
+<ol>
+  <li>
+    <p>Open a terminal window (my preference is iTerm on my MacBook Pro)</p>
+  </li>
+  <li>
+    <p>Run </p>
 
-<pre><code>```
-Code
-More Code
-```
+    <pre><code> ifconfig 
 </code></pre>
 
-<ol>
-  <li>Run 
- <code>
- ifconfig en1 | grep ether`.
-</code></li>
-  <li>You should see 
- <code>
- ether 00:00:00:00:00:00
-</code>
-with your specific MAC address. The reason en1 is used is because you want to find the MAC address for your wireless card. (To reset your MAC address, you will either want to write it down, or it will automagically reset when you reboot your computer)</li>
-  <li>To change your MAC address run 
- <code>
- sudo ifconfig en1 ether 00:00:00:00:00:01
-</code>
-with the new MAC address that you want your wireless card to have.</li>
-  <li>To check that it worked you can run 
- <code>
- ifconfig en1 | grep ether 
-</code>
-and the new MAC address should be printed to the screen.</li>
+    <p>and you should see a screen similar to the one shown below. (on MacBook Pros en0 is Ethernet, and en1 is Wireless)</p>
+  </li>
+  <li>
+    <p>Run</p>
+
+    <pre><code> ifconfig en1 | grep ether.
+</code></pre>
+  </li>
+  <li>
+    <p>You should see </p>
+
+    <pre><code> ether 00:00:00:00:00:00
+</code></pre>
+
+    <p>with your specific MAC address. The reason en1 is used is because you want to find the MAC address for your wireless card. (To reset your MAC address, you will either want to write it down, or it will automagically reset when you reboot your computer)</p>
+  </li>
+  <li>
+    <p>To change your MAC address run </p>
+
+    <pre><code> sudo ifconfig en1 ether 00:00:00:00:00:01
+</code></pre>
+
+    <p>with the new MAC address that you want your wireless card to have.</p>
+  </li>
+  <li>
+    <p>To check that it worked you can run </p>
+
+    <pre><code> ifconfig en1 | grep ether 
+</code></pre>
+
+    <p>and the new MAC address should be printed to the screen.</p>
+  </li>
 </ol>
 
         
